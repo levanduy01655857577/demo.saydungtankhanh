@@ -1,0 +1,74 @@
+/*
+*  CSS FOR MAIN MENU ON THE TOP of PAGE
+*
+*/
+.sf-menu a { 
+	width:100px;
+	height:31px;
+	color:#9a9a9a !important;
+	font-weight:bold;
+	line-height:31px;
+	text-align:center;
+	text-transform:uppercase;
+	
+ }
+.sf-menu {
+		 z-index: 100 !important; 
+		margin-left:10px;
+		*margin-left:-14px;
+}
+
+.sf-menu li { background:url(../images/li_a.jpg) top left no-repeat;
+				margin-right:6px;
+				cursor: pointer;
+}
+.sf-menu li.last-child { margin:0 !important; }
+.sf-menu ul li a { 
+	width:auto !important; 
+	background:none !important;	
+}
+
+
+.sf-navbar li a:hover { 
+	color:#333333;
+	background:url(../images/li_a_hover.jpg) top center no-repeat;
+	text-decoration:none;
+}
+.sf-navbar li.parent.sfHover
+{
+	background:url(../images/parent_a.jpg) top center no-repeat !important; 
+	height:37px;
+	
+}
+.sf-navbar li.parent.sfHover a:hover { background:none !important; }
+.sf-menu li li {				
+				width:auto;
+				border:none !important;
+				background:none!important;
+				margin-right:9px;
+				}
+.sf-menu li  ul { 
+				margin-top:6px !important; 
+				border-left:1px solid #c2c2c2;
+				border-right:1px solid #c2c2c2;
+				z-index:-999 !important; 
+				padding-left:4px;
+				background:url(../images/li_li.jpg) bottom center repeat-x !important;
+				}
+.sf-navbar li li:hover,
+.sf-navbar li li.sfHover,
+.sf-navbar li li.current
+{
+	background:none !important;
+	
+}
+
+.sf-menu li li a { 
+	text-transform:capitalize !important;
+	font-size:11px;
+}
+.sf-menu li li a:hover { text-decoration:underline; }
+.sf-navbar li li.sfHover { height:31px !important; }
+/*-----------------------------------------------------------------------*/
+.sf-menu .item117 ul li a { margin:0 5px; }
+.sf-menu .item41 ul li a { margin:0 5px; }

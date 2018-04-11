@@ -1,0 +1,415 @@
+/*--------------------------------------------------------------
+# Finance.com - September 2009 (for Joomla 1.5)
+# Copyright (C) 2007-2009 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com  
+---------------------------------------------------------------*/
+
+/* News Show Pro GK1
+---------------------------------------------------------------*/
+h4.ta_center, p.ta_center {text-align: center;}
+h4.ta_left,p.ta_left {text-align: left;}
+h4.ta_right,p.ta_right {text-align: right;}
+p.ta_justify {text-align: justify;}
+img.i_left {display: block;float: left;}
+img.i_right {display: block;float: right;}
+img.i_center {display: block;margin: 0 auto 10px;}
+a.readon_class {}
+a.p_left {float: left !important;}
+a.p_right {float: right !important;}
+a.p_center {margin: 0 auto !important;}
+/*default style*/
+div.gk_npro_mainwrap {
+	background: none;
+}
+div.gk_npro_full_interface {
+	min-height:16px;
+	float:left;
+	width:100%;
+	clear:both;
+	margin-top:-4px;
+}
+div.gk_npro_full_interface ul {
+	list-style-image: none!important;
+	margin:0;
+	padding: 0;
+	float: left;
+}
+div.gk_npro_interface_bg,
+div.gk_npro_short_interface_bg {
+	float: right;
+	width: 32px;
+	height: 18px;
+	position:relative;
+	top:-26px;
+}
+div.gk_npro_full_next {	
+	float: right;	
+}
+div.gk_npro_full_scroll1 {
+	clear:both;
+	overflow: hidden;
+}
+div.gk_npro_full_scroll2 {}
+div.gk_npro_full_tablewrap {
+	float: left;
+}
+table.gk_npro_table {}
+table.gk_npro_table tr {}
+table.gk_npro_table td {}
+div.gk_npro_short {
+	min-height: 21px;
+}
+div.gk_npro_short_scroll1 {
+	overflow: hidden;
+}
+div.gk_npro_short_scroll2{
+	overflow:hidden;
+}
+div.gk_npro_short_scroll2 {}
+div.gk_npro_short_ulwrap {
+	float: left;
+}
+div.gk_npro_short_ulwrap ul {
+	margin: 4px 0 0 0;
+	padding: 0;
+	list-style-image: none!important;
+	list-style-type:none!important;
+}
+div.gk_npro_short_ulwrap ul li {
+	padding:2px 0;
+	margin:0 0 2px 0;
+	border-bottom: 1px dotted;
+	line-height: 140%;
+}
+div.gk_npro_short_ulwrap ul li h4,
+div.gk_npro_short_ulwrap ul li h4 a {
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0 0 3px 0;
+}
+div.gk_npro_short_ulwrap ul li p {
+	font-size: 11px;
+	margin: 0;
+}
+div.gk_npro_short_interface {
+	padding-top: 5px;
+	overflow: hidden;
+	margin: 2px 0 0;
+}
+div.gk_npro_short_interface span {
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.gk_npro_short_interface span a{
+	font-weight: normal;
+	text-transform: none;
+}
+div.gk_npro_short_prev {
+	width: 33px;
+	height: 15px;
+	float: right;
+	margin: 0;
+}
+div.gk_npro_short_prev:hover {
+	cursor: pointer;
+}
+div.gk_npro_short_next {
+	width: 33px;
+	height: 15px;
+	float: right;
+	margin: 0;
+}
+div.gk_npro_short_next:hover {
+	cursor: pointer;
+}
+h4.gk_npro_header {
+	font-weight:normal;
+	font-size: 18px;
+	font-family:Georgia, serif;
+	margin: 3px 0 8px 0;
+}
+p.gk_npro_text {
+	margin: 0;
+	font-size: 12px;
+}
+p.gk_npro_info {
+	font-size: 10px;
+}
+div.gk_npro_mainwrap a.readon_class{
+	text-decoration:none!important;
+          margin:10px 0 15px;
+}
+div.gk_npro_full_prev, 
+div.gk_npro_full_next,
+div.gk_npro_short_prev, 
+div.gk_npro_short_next{
+	width: 16px;
+	height: 9px;
+	float: left;
+	margin: 0!important;
+}
+div.gk_npro_short_prev, 
+div.gk_npro_short_next{
+	float:right;
+}
+div.gk_npro_full_prev:hover, 
+div.gk_npro_full_next:hover,
+div.gk_npro_short_prev:hover, 
+div.gk_npro_short_next:hover{
+	cursor: pointer;
+}
+div.gk_npro_full_interface ul li,
+div.gk_npro_full_interface ul li:first-child{
+	cursor: pointer;
+	float: left;
+	width: 9px;
+	height: 9px;
+	border:none!important;
+	margin:0 3px 0 0!important;
+	text-indent: -999em;
+	padding: 0;
+}
+div.gk_npro_full_interface ul li.active{ 
+	margin:0!important;
+	margin-right: 3px!important;
+}
+.gk_npro_short_next,
+.gk_npro_short_prev{
+	position:relative;
+	top:-7px;
+}
+/* GK Tab 
+---------------------------------------------------------------*/
+.clearfix-tabs{
+	clear: both;
+}
+.gk_tab_item_space{
+	padding:10px 0;
+}
+div.gk_tab-style1 {
+	position: relative;
+}
+div.gk_tab_wrap-style1 {
+	margin: 0 auto;
+}
+ul.gk_tab_ul-style1 {
+	list-style-type: none;
+	margin:10px 0 5px 0;
+	list-style-image:none!important;
+	overflow:hidden;
+	padding:0 4px;
+}
+div.gk_tab_container0-style1 {
+	clear: both;
+}
+div.gk_tab_container1-style1 {
+	overflow: hidden;
+}
+div.gk_tab_item-style1 {
+	float: left;
+	overflow: hidden;
+	padding: 0;
+}
+div.gk_tab_item-style1 h4.gk_tab_news_header {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 8px 0;
+}
+div.gk_tab_item-style1 p.gk_tab_news_text{
+	font-size: 12px;
+}
+div.gk_tab_item-style1 img.gk_tab_news_image{
+	padding: 2px;
+}
+ul.gk_tab_ul-style1 li,
+ul.gk_tab_ul-style1 li.active{
+	float:left;
+	width:auto;
+	height:20px;
+	cursor:pointer;
+	padding:0!important;
+	font-weight:bold;
+	line-height:24px;
+	height:24px;
+}
+ul.gk_tab_ul-style1 li:first-child{
+	margin:0!important;
+}
+ul.gk_tab_ul-style1 li span,
+ul.gk_tab_ul-style1 li.active span{
+	display:block;
+	height:24px;
+	line-height:24px;
+	margin:0 0 0 5px;
+	padding:0 8px 0 3px;
+}
+.gk_tab_container0-style1,
+.gk_tab_container1-style1,
+.gk_tab_container2-style1{
+	position:relative;
+}
+
+/* GK Weather
+---------------------------------------------------------------*/
+
+.gkw_main{
+	overflow:hidden;
+}
+.gkw_current{
+	overflow:hidden;
+}
+.gkw_main_left{
+	float:left;
+	width:auto;
+}
+.gkw_temp{
+	font-size:18px;
+	text-align:center;
+	margin:8px 0 0 0;
+}
+.gkw_main_right{
+	float:left;
+	width:auto;
+	margin:0 0 0 16px;
+}
+.gkw_main_right h2{
+	margin: 4px 0 4px 0;
+}
+.gkw_main_right p {margin: 0.1em 0;}
+.gkw_condition{}
+.gkw_humidity{}
+.gkw_wind{}
+ul.gkw_next_days{
+	clear:both;
+	list-style-type:none;
+	list-style-image:none;
+	margin:12px 0 0 0;
+	padding:0;
+}
+ul.gkw_next_days li{
+	float:left;
+	width:auto;
+	margin:0 4px 0 0;
+	padding:0 0 0 4px;
+}
+ul.gkw_next_days li:first-child{
+	border-left:none;
+}
+.gkw_day{
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+	display:block;
+}
+ul.gkw_next_days li img{
+	display:block;
+	margin:0 auto;
+	clear:both;
+}
+p.gkw_day_temp{
+	margin:6px 0 0 0;
+}
+span.gkw_day_day{
+	padding:2px;
+	font-size:10px;
+}
+span.gkw_day_night{
+	padding:2px;
+	font-size:10px;
+}
+
+/* Image Show
+---------------------------------------------------------------*/
+.gk_is_wrapper{
+	position:relative;
+}
+.gk_is_preloader,
+.gk_is_preloader div{
+	position:absolute;
+	z-index:999;
+	width:100%;
+	height:100%;
+}
+.gk_is_preloader div{
+	position:relative;	
+}
+.gk_is_preloader p{
+	font-size:32px;
+	font-family:Georgia, serif;
+	position:absolute;
+	right:50px;
+	bottom:20px;
+}
+.gk_is_slide{
+	position:absolute;
+}
+.gk_is_text{
+	position:absolute;
+	z-index:997;
+	left:10px;
+	padding:2px 4px;
+	font-size:12px;
+	font-weight:normal;
+	font-family:Arial, sans-serif;
+	
+}
+.gk_is_text h4{
+	font-size:16px;
+	font-family:arial;
+	font-weight:bold;
+}
+.gk_is_text p { padding:0; margin:2px 0; }
+.gk_is_text_bg{
+	position:absolute;
+	z-index:996;
+	width:100%;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.gk_is_text_data{
+	display:none;
+}
+.gk_is_prev,
+.gk_is_next{
+	text-indent:-999em;
+	width:23px;
+	height:39px;
+	position:absolute;
+	z-index:900;
+	cursor:pointer;
+}
+.gk_is_prev{
+	top:40%;
+	left:20px;
+}
+.gk_is_next{
+	top:40%;
+	right:20px;
+}
+
+.gk_is_preloader {
+
+background:#000000 url(../images/style1/gk_stuff/loader.gif) no-repeat scroll center center;
+}
+.gk_is_text, .gk_is_text h4, .gk_is_text h4 a {
+color:#FFFFFF !important;
+}
+.gk_is_text h4 a:hover {
+color:#B51A1B !important;
+}
+.gk_is_text_bg {
+
+background:#001122 none repeat scroll 0 0;
+}
+.gk_is_prev {
+
+background:transparent url(../images/style1/gk_stuff/is_arrows.png) no-repeat scroll left 0;
+}
+.gk_is_next {
+
+background:transparent url(../images/style1/gk_stuff/is_arrows.png) no-repeat scroll right 0;
+}
+.gk_is_text h4 { margin:0; padding:0; }

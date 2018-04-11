@@ -1,0 +1,15 @@
+a.tog{
+	font-size:13px;
+	font-weight:bold;
+	color: #41464D;
+	
+}
+a:hover.tog{
+	font-size:13px;
+	font-weight:bold;
+	color: #9d9d9d;
+	
+	text-decoration:none;
+	display:block;
+	
+}
