@@ -18,7 +18,7 @@ img{ border:0px;}
 
 /*-------------------------------------a-------------------------------------*/
 a { 
-	color:#00569A;
+	color:#00a651;
 	text-decoration:none; 
 	outline:0;
 	}
@@ -67,7 +67,7 @@ a:hover {
 	}
 .h_top{
 	height:10px;
-	background-color:#00559e;
+	background-color:#00a651;
 	border-top:1px solid #ffffff;
 	margin-bottom:10px;
 	}
@@ -1399,7 +1399,7 @@ div.tip-loading {
 .box_left_intro_top  {
 	font-size:18px;
 	font-weight:bold;
-	color:#01549F;
+	color:#00a651;
 	background-image: url(../images/box_left.gif);
 	background-repeat: no-repeat;
 	background-position: left 12px;
@@ -1437,7 +1437,7 @@ div.tip-loading {
 .box_right_intro_top  {
 	font-size:20px;
 	font-weight:bold;
-	color:#01549f;
+	color:#00a651;
 	background-image: url(../images/box_right.gif);
 	background-repeat: no-repeat;
 	background-position: left top;
